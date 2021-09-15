@@ -1,0 +1,261 @@
+/*GENERAL*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /**ESTO DA A CONOCER A 1 REM =10PX.
+    /** 10 rem**/
+}
+/* Para que el ancho del margen no haga conflicto con el Padding*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    text-align: 2;
+    line-height: 2;
+}
+
+
+/*GLOBALES*/
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4.0rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*utilidades*/
+
+.alineado {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+/*cabezera del blog*/
+
+@media(min-width:750px) {
+    .cabezera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text-header {
+        margin-top: 10rem;
+    }
+}
+
+.site-header {
+    background-image: url(../img/banner.jpg);
+    padding: 2rem;
+    background-position: center;/* posicionar la imagen del centro*/
+    background-size: cover; /* se acople tanto el ancho y largo de la imagen*/
+    height: 60rem;
+    color: white;
+}
+
+.site-header h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.site-header h1 span {
+    font-weight: 700;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+.navegacion {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+@media(min-width:750px) {
+    .navegacion a {
+        display: inline;
+        justify-content: space-between;
+        margin-right: 2rem;
+    }
+}
+
+.text-header {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.text-header p {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 750px) {
+    .text-header {
+        margin-top: 15rem;
+    }
+}
+.contenidoCafe{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 3rem;
+}
+.marginH2 h2{
+    margin: 0.6rem;
+}
+/** BOTON*/
+.boton a{
+    background-color: black;
+    padding: 1.3rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+.boton input{
+    background-color: black;
+    padding: 1.3rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+.botonCafe a{
+    background-color: brown;
+    padding: 1.3rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+.TipoDeGrano{
+    margin-bottom: 6rem;
+}
+
+.cursos h3{
+    margin: 0.5rem;
+}
+
+/*cabezera*/
+.footer{
+    background-color: black;
+    color: white;
+}
+
+/*NOSOSTROS*/
+.nosotros h2{
+    text-align: center;
+    margin: 1rem;
+}
+.nosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2rem;
+    margin-bottom: 5rem;
+    font-weight: 600;
+}
+@media (max-width:750px){
+    .nosotros{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .text-header h1{
+        line-height: 1;
+    }
+}
+/*CURSOS*/
+.cursos{
+    
+    grid-template-columns: 30% 70%;
+    column-gap: 2rem;
+    margin-bottom: 4rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+@media (max-width: 750px){
+    .cursos{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #e1e1e1;
+        
+    }
+    .contenedor{
+        margin: 0 2rem 0 2rem;
+    }
+}
+/**Contacto*/
+
+.formulario {
+    
+    margin: auto;
+   
+    max-width: 80rem;
+    background-color: honeydew;
+    text-align: justify;
+    padding: 8rem;
+}
+.formulario .campo{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.formulario .campo label{
+    font-weight: 600;
+    flex: 0 0 8rem;
+}
+.formulario .campo input, textarea{
+    padding: 0.8rem;
+    border-color: rgb(97, 97, 97);
+    flex: 1;
+}
+.enviar input{
+    
+}
+.ponerFondo{
+    display: block;
+    background-image: url(../img/nosotros.jpg);
+    background-attachment: fixed;
+    height: 50rem;
+}
